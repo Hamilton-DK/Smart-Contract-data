@@ -1,6 +1,7 @@
 # Smart contract vulnerability dataset
 
-**This repository releases the official datasets for five types of smart contract vulnerabilities, and gives the instructions for how to label the these vulnerability datasets.**
+**This repository releases the official smart contract dataset consisting of four types of vulnerabilities, 
+where presents the instructions of how to label the specific vulnerability.**
 
 
 
@@ -18,7 +19,8 @@ We label a function with timestamp dependence vulnerability as:**TimestampInvoc 
 
 #### timestampInvocation
 
-Note that we treat those functions with the key word of _block.timestamp_ as the research targets. As such, we utilize the pattern **timestampInvoc** to filter those functions without the key word of _block.timestamp_. 
+Note that we treat those functions with the key word of _block.timestamp_ as the research targets. 
+As such, we utilize the pattern **timestampInvoc** to filter those functions without the key word of _block.timestamp_. 
 
 
 #### timestampAssign 
@@ -59,7 +61,7 @@ the timestamp dependency vulnerability.
         11.}
     ```
     
-For instance, the value of _block.timestamp_ is assigned to variable _time_  (line 6), while the variable _time_
+For instance, the value of _block.timestamp_ is assigned to variable _time_ (line 6), while the variable _time_
 is assigned in the require statement (line 7). Therefore, we mark that the function _withdrawal_ does not exist the 
 timestamp dependency vulnerability, i.e., label = 0.
 
