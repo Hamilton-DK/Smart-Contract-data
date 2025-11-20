@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart contract vulnerability dataset
 
 **This repository releases the official smart contract dataset consisting of four types of vulnerabilities, 
@@ -405,3 +406,7 @@ we label the corresponding function exists the dangerous delegatecall vulnerabil
     
 For instance, the _delegate_ caller is _callee_ (line 4), and _callee_ is not the target address specified by owner,
 we label the function _forward_ exists the dangerous delegatecall vulnerability, i.e., label = 1.
+=======
+# -
+用于我们小组论文实验的数据集
+>>>>>>> 68166f5844cad1f3939d1f1f497136f5f18d65f5
